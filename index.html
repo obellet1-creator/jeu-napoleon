@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Jeu – La France au XVIIIᵉ siècle</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+/* ===== PAGE ===== */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #A63D03;
+  margin: 0;
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ===== CONTENEUR DÉ (INDÉPENDANT) ===== */
+.dice-container {
+  background: rgba(255,255,255,0.95);
+  padding: 18px 0;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+  text-align: center;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 620px; /* même largeur que conteneur jeu */
+}
+
+#rollDice {
+  padding: 10px 18px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #7a2d02;
+  color: white;
+}
+
+#rollDice:hover {
+  background: #5c2101;
+}
+
+#dice-result {
+  margin-top: 10px;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #7a2d02;
+}
+
+/* ===== CONTENEUR JEU ===== */
+.game-container {
+  background: rgba(255,255,255,0.95);
+  width: 100%;
+  max-width: 620px; /* même largeur que conteneur dé */
+  padding: 26px;
+  border-radius: 16px;
+  box-shadow: 0 8px 22px rgba(0,0,0,0.35);
+  text-align: center;
+}
+
+/* TITRE */
+h1 {
+  margin-top: 0;
+  color: #7a2d02;
+}
+
+/* TIMER */
+#timer-container {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 15px auto;
+}
+
+#timer-number {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #c0392b;
+}
+
+svg circle {
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+  stroke-width: 10;
+  fill: none;
+}
+
+#timer-bg { stroke: #eee; }
+#timer-circle {
+  stroke: #c0392b;
+  stroke-dasharray: 314;
+  stroke-dashoffset: 0;
+  transition: stroke-dashoffset 1s linear;
+}
+
+/* QUESTION */
+#question {
+  font-size: 1.25rem;
+  margin: 15px 0;
+  min-height: 70px;
+}
+
+/* BOUTONS */
+.buttons {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+button {
+  padding: 12px 18px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #2874a6;
+  color: white;
+}
+
+button:hover {
+  background: #1f618d;
+}
+
+/* RÉPONSE */
+#answer {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 1.15rem;
+  min-height: 40px;
+  color: #1b4f72;
+}
+
+/* ===== CONTENEUR RÈGLES ===== */
+.rules-container {
+  background: rgba(255,255,255,0.95);
+  max-width: 620px;
+  width: 100%;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+  color: #1c2833;
+}
+
+.rules-container h2 {
+  margin-top: 0;
+  color: #7a2d02;
+}
+
+.rules-container p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+</style>
+</head>
+
+<body>
+
+<!-- 🎲 DÉ INDÉPENDANT -->
+<div class="dice-container">
+  <button id="rollDice">🎲 Tirer le dé</button>
+  <div id="dice-result">–</div>
+</div>
+
+<!-- 🎮 CONTENEUR JEU (TIMER + QUESTION) -->
+<div class="game-container">
+
+  <h1>La France au XVIIIᵉ siècle</h1>
+
+  <!-- TIMER -->
+  <div id="timer-container">
+    <svg width="120" height="120">
+      <circle id="timer-bg" cx="60" cy="60" r="50"></circle>
+      <circle id="timer-circle" cx="60" cy="60" r="50"></circle>
+    </svg>
+    <div id="timer-number">30</div>
+  </div>
+
+  <!-- QUESTION -->
+  <div id="question">Chargement de la question…</div>
+
+  <!-- BOUTONS -->
+  <div class="buttons">
+    <button id="showAnswer">Afficher la réponse</button>
+    <button id="nextQuestion">Nouvelle question</button>
+  </div>
+
+  <!-- RÉPONSE -->
+  <div id="answer"></div>
+
+</div>
+
+<!-- 📜 CONTENEUR RÈGLES DU JEU -->
+<div class="rules-container">
+  <h2>Règles du jeu</h2>
+  <p>
+    1. Chaque joueur tire le dé à son tour.<br>
+    2. Le joueur à sa droite clique sur "Nouvelle question" et la pose.<br>
+    3. Le timer démarre.<br>
+    4. Le joueur a 30 secondes pour répondre.<br>
+    5. On peut afficher la réponse avec le bouton "Afficher la réponse".<br>
+    6. Si la réponse est bonne, le joueur rejoue. Si elle n'est pas bonne alors le joueur recule d'une case<br>
+    7. Si le joueur tombe sur une case avec une croix en bas à gauche, il passe son tour la prochaine fois.<br>
+    8. Si le joueur tombe sur une case avec une flèche en bas à gauche, il rejoue sans avoir à répondre à la question.<br>
+    9. Le gagnant est le joueur qui arrive directement sur la dernière case.<br>
+  </p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
