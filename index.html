@@ -9,7 +9,7 @@
 /* ===== PAGE ===== */
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #E7D197;
+  background-color: #A63D03;
   margin: 0;
   padding: 20px;
   min-height: 100vh;
@@ -18,7 +18,13 @@ body {
   align-items: center;
 }
 
-/* ===== CONTENEUR DÉ (INDÉPENDANT) ===== */
+/* ===== LARGEUR COMMUNE ===== */
+.box {
+  width: 100%;
+  max-width: 620px;
+}
+
+/* ===== CONTENEUR DÉ ===== */
 .dice-container {
   background: rgba(255,255,255,0.95);
   padding: 18px 0;
@@ -26,8 +32,6 @@ body {
   box-shadow: 0 6px 18px rgba(0,0,0,0.35);
   text-align: center;
   margin-bottom: 20px;
-  width: 100%;
-  max-width: 620px; /* même largeur que conteneur jeu */
 }
 
 #rollDice {
@@ -54,21 +58,19 @@ body {
 /* ===== CONTENEUR JEU ===== */
 .game-container {
   background: rgba(255,255,255,0.95);
-  width: 100%;
-  max-width: 620px; /* même largeur que conteneur dé */
   padding: 26px;
   border-radius: 16px;
   box-shadow: 0 8px 22px rgba(0,0,0,0.35);
   text-align: center;
+  margin-bottom: 20px;
 }
 
-/* TITRE */
 h1 {
   margin-top: 0;
   color: #7a2d02;
 }
 
-/* TIMER */
+/* ===== TIMER ===== */
 #timer-container {
   position: relative;
   width: 120px;
@@ -95,21 +97,16 @@ svg circle {
 }
 
 #timer-bg { stroke: #eee; }
-#timer-circle {
-  stroke: #c0392b;
-  stroke-dasharray: 314;
-  stroke-dashoffset: 0;
-  transition: stroke-dashoffset 1s linear;
-}
+#timer-circle { stroke: #c0392b; }
 
-/* QUESTION */
+/* ===== QUESTION ===== */
 #question {
   font-size: 1.25rem;
   margin: 15px 0;
   min-height: 70px;
 }
 
-/* BOUTONS */
+/* ===== BOUTONS ===== */
 .buttons {
   display: flex;
   gap: 12px;
@@ -131,7 +128,7 @@ button:hover {
   background: #1f618d;
 }
 
-/* RÉPONSE */
+/* ===== RÉPONSE ===== */
 #answer {
   margin-top: 20px;
   font-weight: bold;
@@ -143,9 +140,6 @@ button:hover {
 /* ===== CONTENEUR RÈGLES ===== */
 .rules-container {
   background: rgba(255,255,255,0.95);
-  max-width: 620px;
-  width: 100%;
-  margin-top: 20px;
   padding: 20px;
   border-radius: 16px;
   box-shadow: 0 6px 18px rgba(0,0,0,0.35);
@@ -166,18 +160,16 @@ button:hover {
 
 <body>
 
-<!-- 🎲 DÉ INDÉPENDANT -->
-<div class="dice-container">
+<!-- 🎲 DÉ -->
+<div class="dice-container box">
   <button id="rollDice">🎲 Tirer le dé</button>
   <div id="dice-result">–</div>
 </div>
 
-<!-- 🎮 CONTENEUR JEU (TIMER + QUESTION) -->
-<div class="game-container">
-
+<!-- 🎮 JEU -->
+<div class="game-container box">
   <h1>Napoléon</h1>
 
-  <!-- TIMER -->
   <div id="timer-container">
     <svg width="120" height="120">
       <circle id="timer-bg" cx="60" cy="60" r="50"></circle>
@@ -186,22 +178,18 @@ button:hover {
     <div id="timer-number">30</div>
   </div>
 
-  <!-- QUESTION -->
   <div id="question">Chargement de la question…</div>
 
-  <!-- BOUTONS -->
   <div class="buttons">
     <button id="showAnswer">Afficher la réponse</button>
     <button id="nextQuestion">Nouvelle question</button>
   </div>
 
-  <!-- RÉPONSE -->
   <div id="answer"></div>
-
 </div>
 
-<!-- 📜 CONTENEUR RÈGLES DU JEU -->
-<div class="rules-container">
+<!-- 📜 RÈGLES -->
+<div class="rules-container box">
   <h2>Règles du jeu</h2>
   <p>
     1. Chaque joueur tire le dé à son tour.<br>
@@ -219,6 +207,3 @@ button:hover {
 <script src="script.js"></script>
 </body>
 </html>
-
-
-
