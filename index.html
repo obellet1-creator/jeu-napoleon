@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<title>Napoleon</title>
+<title>Napoléon</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
@@ -22,16 +22,20 @@ body {
 .box {
   width: 100%;
   max-width: 620px;
+  box-sizing: border-box; /* inclut padding et border dans largeur */
 }
 
 /* ===== CONTENEUR DÉ ===== */
 .dice-container {
   background: rgba(255,255,255,0.95);
-  padding: 18px 0;
+  padding: 18px;
   border-radius: 16px;
   box-shadow: 0 6px 18px rgba(0,0,0,0.35);
   text-align: center;
   margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #rollDice {
