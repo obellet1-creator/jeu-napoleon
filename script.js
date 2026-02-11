@@ -3,7 +3,8 @@ document.addEventListener("DOMContentLoaded", function () {
   // ==========================
   // VARIABLES GLOBALES
   // ==========================
-  let questions = [];
+  let questions = [];       // liste originale
+  let questionsQueue = [];  // liste mélangée pour le jeu
   let currentQuestion = null;
 
   const timerDuration = 30;
@@ -31,7 +32,8 @@ document.addEventListener("DOMContentLoaded", function () {
     .then(response => response.json())
     .then(data => {
       questions = data;
-      loadNewQuestion(false);
+      prepareQuestionsQueue();
+      loadNextQuestion(false);
     })
     .catch(error => {
       document.getElementById("question").textContent =
@@ -40,13 +42,21 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
   // ==========================
-  // QUESTIONS
+  // FONCTIONS QUESTIONS
   // ==========================
-  function loadNewQuestion(startTimerFlag = true) {
-    if (questions.length === 0) return;
+  function prepareQuestionsQueue() {
+    // Copie et mélange des questions
+    questionsQueue = [...questions];
+    shuffleArray(questionsQueue);
+  }
 
-    currentQuestion =
-      questions[Math.floor(Math.random() * questions.length)];
+  function loadNextQuestion(startTimerFlag = true) {
+    if (questionsQueue.length === 0) {
+      // recrée une nouvelle queue mélangée si vide
+      prepareQuestionsQueue();
+    }
+
+    currentQuestion = questionsQueue.shift(); // prend la première question
 
     document.getElementById("question").textContent =
       currentQuestion.question;
@@ -95,47 +105,50 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function updateTimerDisplay() {
     timerNumber.textContent = timeLeft;
-    const offset =
-      circumference - (timeLeft / timerDuration) * circumference;
+    const offset = circumference - (timeLeft / timerDuration) * circumference;
     circle.style.strokeDashoffset = offset;
   }
 
   // ==========================
   // 🎲 DÉ ANIMÉ + ÉCLAT FINAL
   // ==========================
+  function rollDice() {
+    const diceResult = document.getElementById("dice-result");
+    const finalValue = Math.floor(Math.random() * 6) + 1;
+    let count = 0;
 
-function rollDice() {
-  const diceResult = document.getElementById("dice-result");
-  const finalValue = Math.floor(Math.random() * 6) + 1;
-  let count = 0;
+    const interval = setInterval(() => {
+      const randomNum = Math.floor(Math.random() * 6) + 1;
+      diceResult.textContent = randomNum;
+      count++;
 
-  const interval = setInterval(() => {
-    const randomNum = Math.floor(Math.random() * 6) + 1;
-    diceResult.textContent = randomNum;
-    count++;
+      if (count >= 10) {
+        clearInterval(interval);
+        diceResult.textContent = finalValue;
 
-    if (count >= 10) {
-      clearInterval(interval);
-      diceResult.textContent = finalValue;
+        // Ajout de la classe pour l'animation
+        diceResult.classList.add("dice-win");
+        // Retirer la classe après l'animation
+        setTimeout(() => diceResult.classList.remove("dice-win"), 600);
+      }
+    }, 50);
+  }
 
-      // Ajout de la classe pour l'animation
-      diceResult.classList.add("dice-win");
-      // Retirer la classe après l'animation
-      setTimeout(() => diceResult.classList.remove("dice-win"), 600);
+  // ==========================
+  // FONCTION UTILE : MELANGE
+  // ==========================
+  function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
     }
-  }, 50);
-}
-
-
-
-  
+  }
 
   // ==========================
   // BOUTONS
   // ==========================
   document.getElementById("rollDice").addEventListener("click", rollDice);
-  document.getElementById("nextQuestion").addEventListener("click", () => loadNewQuestion(true));
+  document.getElementById("nextQuestion").addEventListener("click", () => loadNextQuestion(true));
   document.getElementById("showAnswer").addEventListener("click", showAnswer);
 
 });
-
