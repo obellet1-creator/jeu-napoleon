@@ -59,6 +59,28 @@
   {"question":"Qui était la sœur de Napoléon mariée à un général français célèbre ?","answer":"Caroline Bonaparte, mariée à Joachim Murat."},
   {"question":"Quel rôle politique Napoléon a-t-il donné à ses frères et sœurs ?","answer":"Il leur a donné des trônes en Europe pour consolider son empire."},
   {"question":"Comment Napoléon surnommait-il sa mère ?","answer":"Letizia."},
+
+{"question":"En quelle année le Conseil d'État a-t-il été créé par Napoléon ?","answer":"1799."},
+{"question":"En quelle année la Banque de France a-t-elle été fondée ?","answer":"1800."},
+{"question":"En quelle année les préfets ont-ils été institués pour administrer les départements ?","answer":"1800."},
+{"question":"En quelle année le Concordat avec le pape Pie VII a-t-il été signé ?","answer":"1801."},
+{"question":"En quelle année la Légion d'honneur a-t-elle été créée ?","answer":"1802."},
+{"question":"En quelle année le franc germinal a-t-il été instauré comme nouvelle unité monétaire stable ?","answer":"1803."},
+{"question":"En quelle année le Code civil des Français (Code Napoléon) a-t-il été promulgué ?","answer":"1804."},
+{"question":"En quelle année le Code de procédure civile a-t-il été promulgué ?","answer":"1806."},
+{"question":"En quelle année le Code de commerce a-t-il été promulgué ?","answer":"1807."},
+{"question":"En quelle année les conseils de prud'hommes ont-ils été créés ?","answer":"1806."},
+{"question":"En quelle année l'Université impériale a-t-elle été fondée ?","answer":"1806."},
+{"question":"En quelle année le Code pénal a-t-il été promulgué ?","answer":"1810."},
+{"question":"En quelle année le Grand Sanhédrin a-t-il été convoqué pour organiser le culte juif ?","answer":"1807."},
+{"question":"En quelle année le système des lycées a-t-il été réorganisé et renforcé ?","answer":"1802."},
+{"question":"En quelle année la Cour des comptes a-t-elle été rétablie ?","answer":"1807."},
+{"question":"En quelle année le divorce a-t-il été réglementé dans le Code civil ?","answer":"1804."},
+{"question":"En quelle année les contributions directes ont-elles été réformées et unifiées ?","answer":"1800."},
+{"question":"En quelle année le notariat a-t-il été réorganisé en tant qu'officiers publics ?","answer":"1803."},
+{"question":"En quelle année le Sénat conservateur a-t-il vu son rôle renforcé dans les réformes institutionnelles ?","answer":"1802."},
+{"question":"En quelle année le Blocus continental a-t-il été instauré comme grande réforme économique ?","answer":"1806."},
+
   {"question":"Quel rôle Letizia, la mère de Napoléon, a-t-elle joué dans sa vie ?","answer":"Elle l’a soutenu et conseillé, surtout dans sa jeunesse."},
   {"question":"Napoléon a-t-il eu d’autres enfants légitimes ou illégitimes ?","answer":"Oui, certains illégitimes, comme Charles Léon et Alexandre Walewski."},
   {"question":"Qui était Alexandre Walewski ?","answer":"Le fils illégitime de Napoléon et Marie Walewska."},
@@ -346,6 +368,7 @@
 
   
 ]
+
 
 
 
