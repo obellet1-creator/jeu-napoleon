@@ -147,6 +147,30 @@
   {"question":"Quelle coalition a combattu Napoléon en 1805 ?","answer":"La Troisième coalition : Royaume-Uni, Autriche, Russie et Suède."},
   {"question":"Quelle coalition a vaincu Napoléon en 1813 ?","answer":"La Sixième coalition."},
   {"question":"Quel royaume Napoléon a créé pour son frère Joseph en Espagne ?","answer":"Le royaume d’Espagne."},
+
+{"question":"En quelle année le style Empire a-t-il commencé à se développer pleinement en France sous Napoléon ?","answer":"1800."},
+{"question":"En quelle année Jacques-Louis David a-t-il peint Bonaparte franchissant le Grand-Saint-Bernard ?","answer":"1801."},
+{"question":"En quelle année Antoine-Jean Gros a-t-il réalisé Bonaparte visitant les pestiférés de Jaffa ?","answer":"1804."},
+{"question":"En quelle année le Sacre de Napoléon par Jacques-Louis David a-t-il été achevé ?","answer":"1807."},
+{"question":"En quelle année l'Arc de triomphe du Carrousel a-t-il été commencé sous l'Empire ?","answer":"1806."},
+{"question":"En quelle année l'Arc de triomphe de l'Étoile a-t-il été commandé par Napoléon ?","answer":"1806."},
+{"question":"En quelle année la colonne Vendôme a-t-elle été érigée à Paris ?","answer":"1810."},
+{"question":"En quelle année le Recueil de décorations intérieures de Percier et Fontaine a-t-il été publié pour la première fois ?","answer":"1801."},
+{"question":"En quelle année Antoine-Jean Gros a-t-il peint la Bataille d'Eylau ?","answer":"1808."},
+{"question":"En quelle année Jean-Auguste-Dominique Ingres a-t-il présenté Napoléon sur le trône impérial ?","answer":"1806."},
+{"question":"En quelle année le musée du Louvre a-t-il été renommé musée Napoléon ?","answer":"1803."},
+{"question":"En quelle année Jacques-Louis David a-t-il peint la Distribution des aigles ?","answer":"1810."},
+{"question":"En quelle année l'église de la Madeleine a-t-elle été conçue comme temple de la Gloire sous Napoléon ?","answer":"1806."},
+{"question":"En quelle année le style Empire s'est-il imposé dans les arts décoratifs et le mobilier en France ?","answer":"1804."},
+{"question":"En quelle année Antoine-Jean Gros a-t-il été nommé peintre officiel de Napoléon ?","answer":"1804."},
+{"question":"En quelle année l'influence de l'expédition d'Égypte a-t-elle marqué fortement l'art et le décor Empire ?","answer":"1799."},
+{"question":"En quelle année Jacques-Louis David a-t-il peint Napoléon dans son cabinet de travail ?","answer":"1812."},
+{"question":"En quelle année la vogue des motifs égyptiens (sphinx, obélisques) a-t-elle explosé dans l'art français ?","answer":"1800."},
+{"question":"En quelle année Charles Percier et Pierre Fontaine sont-ils devenus architectes officiels de Napoléon ?","answer":"1801."},
+{"question":"En quelle année le style Empire a-t-il commencé à décliner avec la chute de Napoléon ?","answer":"1815."},
+
+
+  
   {"question":"Quel royaume Napoléon a créé pour son frère Louis ?","answer":"Le royaume de Hollande."},
   {"question":"Quel royaume Napoléon a créé pour son frère Jérôme ?","answer":"Le royaume de Westphalie."},
   {"question":"Quel rôle Eugène de Beauharnais, beau-fils de Napoléon, a-t-il joué en Europe ?","answer":"Vice-roi d’Italie."},
@@ -368,6 +392,7 @@
 
   
 ]
+
 
 
 
