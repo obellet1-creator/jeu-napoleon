@@ -1,5 +1,25 @@
 [
-  {"question":"Quand Napoléon Bonaparte est-il né ?","answer":"15 août 1769."},
+  {"question":"En quelle année Napoléon Bonaparte est-il né ?","answer":"1769."},
+{"question":"En quelle année Napoléon est-il devenu Premier Consul ?","answer":"1799."},
+{"question":"En quelle année le Consulat à vie a-t-il été instauré ?","answer":"1802."},
+{"question":"En quelle année Napoléon a-t-il été sacré Empereur des Français ?","answer":"1804."},
+{"question":"En quelle année le Code civil (Code Napoléon) a-t-il été promulgué ?","answer":"1804."},
+{"question":"En quelle année la bataille d’Austerlitz a-t-elle eu lieu ?","answer":"1805."},
+{"question":"En quelle année la bataille d’Iéna et Auerstedt a-t-elle eu lieu ?","answer":"1806."},
+{"question":"En quelle année le Blocus continental a-t-il été instauré ?","answer":"1806."},
+{"question":"En quelle année Napoléon a-t-il dissous le Saint-Empire romain germanique ?","answer":"1806."},
+{"question":"En quelle année la bataille d’Eylau a-t-elle eu lieu ?","answer":"1807."},
+{"question":"En quelle année la bataille de Friedland a-t-elle eu lieu ?","answer":"1807."},
+{"question":"En quelle année les traités de Tilsit ont-ils été signés ?","answer":"1807."},
+{"question":"En quelle année la campagne d’Espagne a-t-elle véritablement commencé (soulèvement du Dos de Mayo) ?","answer":"1808."},
+{"question":"En quelle année le divorce de Napoléon et Joséphine a-t-il été prononcé ?","answer":"1809."},
+{"question":"En quelle année Napoléon a-t-il épousé Marie-Louise d’Autriche ?","answer":"1810."},
+{"question":"En quelle année la campagne de Russie a-t-elle commencé ?","answer":"1812."},
+{"question":"En quelle année la bataille de Leipzig (bataille des Nations) a-t-elle eu lieu ?","answer":"1813."},
+{"question":"En quelle année Napoléon a-t-il abdiqué pour la première fois (abdication de Fontainebleau) ?","answer":"1814."},
+{"question":"En quelle année les Cent-Jours ont-ils commencé (retour de l’île d’Elbe) ?","answer":"1815."},
+{"question":"En quelle année la bataille de Waterloo a-t-elle eu lieu ?","answer":"1815."},
+  
   {"question":"Où est né Napoléon Bonaparte ?","answer":"À Ajaccio, en Corse."},
   {"question":"Quel était le nom complet de Napoléon ?","answer":"Napoléon Bonaparte."},
   {"question":"Quels étaient les parents de Napoléon ?","answer":"Carlo Buonaparte et Letizia Ramolino."},
@@ -301,5 +321,6 @@
   {"question":"Comment Napoléon a influencé la hiérarchie militaire moderne ?","answer":"Par la création des grades, la discipline et l’organisation structurée de l’armée."},
   {"question":"Quel héritage Napoléon a-t-il laissé pour la nation française ?","answer":"Un État centralisé, des lois uniformes et une culture militaire et administrative durable."}
 ]
+
 
 
