@@ -9,7 +9,7 @@
 /* ===== PAGE ===== */
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #E7D197; /* fond général */
+  background-color: #E7D197;
   margin: 0;
   padding: 20px;
   min-height: 100vh;
@@ -23,13 +23,13 @@ body {
   width: 100%;
   max-width: 620px;
   box-sizing: border-box;
-  border: 2px solid #C0392B; /* contour rouge */
+  border: 2px solid #C0392B;
   border-radius: 16px;
 }
 
 /* ===== CONTENEUR DÉ ===== */
 .dice-container {
-  background: #ffffff; /* blanc */
+  background: #ffffff;
   padding: 18px;
   text-align: center;
   margin-bottom: 20px;
@@ -41,10 +41,10 @@ body {
 #rollDice {
   padding: 10px 18px;
   font-size: 1.1rem;
-  border: 2px solid #C0392B; /* contour rouge */
+  border: 2px solid #C0392B;
   border-radius: 8px;
   cursor: pointer;
-  background: #E7D197; /* jaune boutons */
+  background: #E7D197;
   color: #1c2833;
 }
 
@@ -59,9 +59,32 @@ body {
   color: #1c2833;
 }
 
+/* ===== EFFET VICTOIRE DU DÉ ===== */
+@keyframes diceWin {
+  0% {
+    transform: scale(1);
+    text-shadow: 0 0 0 rgba(192,57,43,0);
+  }
+  50% {
+    transform: scale(1.4);
+    text-shadow:
+      0 0 10px rgba(192,57,43,0.9),
+      0 0 25px rgba(192,57,43,0.8),
+      0 0 45px rgba(192,57,43,0.7);
+  }
+  100% {
+    transform: scale(1);
+    text-shadow: 0 0 0 rgba(192,57,43,0);
+  }
+}
+
+#dice-result.dice-win {
+  animation: diceWin 0.6s ease-out;
+}
+
 /* ===== CONTENEUR JEU ===== */
 .game-container {
-  background: #ffffff; /* blanc */
+  background: #ffffff;
   padding: 26px;
   text-align: center;
   margin-bottom: 20px;
@@ -79,9 +102,9 @@ h1 {
   width: 120px;
   height: 120px;
   margin: 0 auto 15px auto;
-  background: #E7D197; /* jaune timer */
+  background: #E7D197;
   border-radius: 50%;
-  border: 2px solid #C0392B; /* contour rouge */
+  border: 2px solid #C0392B;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -107,7 +130,7 @@ svg circle {
 }
 
 #timer-bg { stroke: #eee; }
-#timer-circle { stroke: #c0392b; }
+#timer-circle { stroke: #C0392B; }
 
 /* ===== QUESTION ===== */
 #question {
@@ -128,10 +151,10 @@ svg circle {
 button {
   padding: 12px 18px;
   font-size: 1rem;
-  border: 2px solid #C0392B; /* contour rouge */
+  border: 2px solid #C0392B;
   border-radius: 8px;
   cursor: pointer;
-  background: #E7D197; /* jaune boutons */
+  background: #E7D197;
   color: #1c2833;
 }
 
@@ -150,7 +173,7 @@ button:hover {
 
 /* ===== CONTENEUR RÈGLES ===== */
 .rules-container {
-  background: #ffffff; /* blanc */
+  background: #ffffff;
   padding: 20px;
   color: #1c2833;
   margin-bottom: 20px;
@@ -207,15 +230,13 @@ button:hover {
     3. Le timer démarre.<br>
     4. Le joueur a 30 secondes pour répondre.<br>
     5. On peut afficher la réponse avec le bouton "Afficher la réponse".<br>
-    6. Si la réponse est bonne, le joueur rejoue. Si elle n'est pas bonne alors le joueur recule d'une case.<br>
-    7. Si le joueur tombe sur une case avec une croix en bas à gauche, il passe son tour la prochaine fois.<br>
-    8. Si le joueur tombe sur une case avec une flèche en bas à gauche, il rejoue sans avoir à répondre à la question.<br>
-    9. Le gagnant est le joueur qui arrive directement sur la dernière case.<br>
+    6. Si la réponse est bonne, le joueur rejoue. Sinon il recule d'une case.<br>
+    7. Case croix : le joueur passe son tour.<br>
+    8. Case flèche : le joueur rejoue sans question.<br>
+    9. Le gagnant arrive exactement sur la dernière case.<br>
   </p>
 </div>
 
 <script src="script.js"></script>
 </body>
 </html>
-
-
