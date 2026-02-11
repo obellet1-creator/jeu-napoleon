@@ -103,29 +103,32 @@ document.addEventListener("DOMContentLoaded", function () {
   // ==========================
   // 🎲 DÉ ANIMÉ + ÉCLAT FINAL
   // ==========================
-  function rollDice() {
-    const diceResult = document.getElementById("dice-result");
-    const finalValue = Math.floor(Math.random() * 6) + 1;
-    let count = 0;
 
-    diceResult.classList.remove("dice-final");
+function rollDice() {
+  const diceResult = document.getElementById("dice-result");
+  const finalValue = Math.floor(Math.random() * 6) + 1;
+  let count = 0;
 
-    const interval = setInterval(() => {
-      diceResult.textContent = Math.floor(Math.random() * 6) + 1;
-      count++;
+  const interval = setInterval(() => {
+    const randomNum = Math.floor(Math.random() * 6) + 1;
+    diceResult.textContent = randomNum;
+    count++;
 
-      if (count >= 12) {
-        clearInterval(interval);
-        diceResult.textContent = finalValue;
+    if (count >= 10) {
+      clearInterval(interval);
+      diceResult.textContent = finalValue;
 
-        // ✨ effet victoire
-        diceResult.classList.add("dice-final");
-        setTimeout(() => {
-          diceResult.classList.remove("dice-final");
-        }, 600);
-      }
-    }, 50);
-  }
+      // Ajout de la classe pour l'animation
+      diceResult.classList.add("dice-win");
+      // Retirer la classe après l'animation
+      setTimeout(() => diceResult.classList.remove("dice-win"), 600);
+    }
+  }, 50);
+}
+
+
+
+  
 
   // ==========================
   // BOUTONS
@@ -135,3 +138,4 @@ document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("showAnswer").addEventListener("click", showAnswer);
 
 });
+
