@@ -24,7 +24,6 @@
   {"question":"Quel âge avait Napoléon lorsqu’il est mort ?","answer":"51 ans."},
   {"question":"Pourquoi Napoléon a-t-il été exilé à Sainte-Hélène ?","answer":"Pour l’empêcher de revenir au pouvoir après Waterloo."},
   {"question":"Quel aspect de son enfance en Corse a influencé son caractère ?","answer":"Sa culture corsée et son attachement à la famille et à la patrie."},
-
  {"question":"Qui était la première épouse de Napoléon ?","answer":"Joséphine de Beauharnais."},
   {"question":"En quelle année Napoléon a-t-il épousé Joséphine ?","answer":"1796."},
   {"question":"Pourquoi Napoléon a-t-il divorcé de Joséphine ?","answer":"Parce qu’elle ne pouvait pas lui donner d’enfant."},
@@ -50,7 +49,6 @@
   {"question":"Quel frère de Napoléon a été vice-roi d’Italie ?","answer":"Vérone n’est pas correcte, il s’agit de Eugène de Beauharnais, son beau-fils."},
   {"question":"Quelle relation Napoléon entretenait-il avec sa famille ?","answer":"Il était proche mais aussi très autoritaire et stratégique."},
   {"question":"Comment la famille de Napoléon a-t-elle contribué à son empire ?","answer":"En occupant des postes royaux et administratifs dans toute l’Europe."},
-
 {"question":"Quel événement a permis à Napoléon de devenir Premier Consul de France ?","answer":"Le coup d’État du 18 Brumaire, en 1799."},
   {"question":"En quelle année Napoléon devient-il Premier Consul ?","answer":"1799."},
   {"question":"En quelle année Napoléon se fait-il couronner empereur ?","answer":"1804."},
@@ -76,7 +74,6 @@
   {"question":"Comment Napoléon a-t-il promu le développement des infrastructures ?","answer":"Par la construction de routes, ponts et canaux."},
   {"question":"Quel était le rôle des maires sous Napoléon ?","answer":"Administrer les communes sous le contrôle des préfets."},
   {"question":"Comment Napoléon a-t-il influencé l’organisation administrative de la France actuelle ?","answer":"En centralisant l’État, créant les départements et un système préfectoral qui existe encore aujourd’hui."},
-
 {"question":"Quelle armée Napoléon a-t-il dirigée lors de ses campagnes européennes ?","answer":"La Grande Armée."},
   {"question":"Quel était le surnom de la Garde impériale de Napoléon ?","answer":"Les immortels."},
   {"question":"Quelle bataille célèbre Napoléon a-t-il remportée contre l’Autriche et la Russie en 1805 ?","answer":"La bataille d’Austerlitz."},
@@ -102,7 +99,6 @@
   {"question":"Qu’est-ce que le Blocus continental ?","answer":"Une stratégie économique pour affaiblir l’Angleterre en interdisant le commerce européen."},
   {"question":"Quelle technique de guerre Napoléon utilisait-il souvent pour surprendre ses ennemis ?","answer":"La manœuvre rapide et la concentration des forces au bon endroit."},
   {"question":"Qu’est-ce que la conscription sous Napoléon ?","answer":"Le recrutement obligatoire de jeunes hommes pour l’armée."},
-
 {"question":"Quel traité Napoléon a signé avec le pape en 1801 ?","answer":"Le Concordat de 1801."},
   {"question":"Quel traité a mis fin à la guerre entre la France et l’Autriche en 1805 ?","answer":"Le traité de Presbourg."},
   {"question":"Quel congrès européen a redessiné l’Europe après la chute de Napoléon ?","answer":"Le Congrès de Vienne, en 1814-1815."},
@@ -128,8 +124,6 @@
   {"question":"Comment Napoléon utilisait-il le mariage pour renforcer les alliances ?","answer":"Il a épousé Marie-Louise d’Autriche pour sceller une alliance avec l’Autriche."},
   {"question":"Quel était le but principal de la politique diplomatique de Napoléon en Europe ?","answer":"Étendre son influence et consolider son empire par des alliances et des monarchies familiales."},
   {"question":"Quelle est l’importance du traité de Fontainebleau de 1814 ?","answer":"Il officialise l’exil de Napoléon sur l’île d’Elbe."},
-
-
 {"question":"Quelle institution financière Napoléon a-t-il créée pour stabiliser la monnaie ?","answer":"La Banque de France."},
   {"question":"Comment Napoléon a-t-il financé ses guerres ?","answer":"Par les impôts, les emprunts et le contrôle des ressources économiques."},
   {"question":"Quel système fiscal Napoléon a-t-il réorganisé ?","answer":"La collecte des impôts sur le revenu et les biens, centralisée et rationalisée."},
@@ -155,8 +149,6 @@
   {"question":"Quel rôle jouaient les préfets dans l’économie locale ?","answer":"Superviser la fiscalité, l’industrie et le commerce."},
   {"question":"Comment Napoléon a-t-il favorisé l’innovation industrielle ?","answer":"En soutenant les manufactures et les écoles techniques."},
   {"question":"Quel impact Napoléon a-t-il eu sur la classe moyenne ?","answer":"Elle a prospéré grâce aux opportunités dans l’administration, le commerce et l’armée."},
-
-
 {"question":"Quel peintre a immortalisé Napoléon dans de nombreux tableaux officiels ?","answer":"Jacques-Louis David."},
   {"question":"Quel célèbre tableau représente le sacre de Napoléon ?","answer":"Le Sacre de Napoléon, par Jacques-Louis David."},
   {"question":"Quel sculpteur a contribué aux monuments napoléoniens ?","answer":"Antonio Canova."},
@@ -182,8 +174,6 @@
   {"question":"Quel type de propagande Napoléon a-t-il utilisé dans les arts ?","answer":"Portraits officiels, statues, décorations publiques et journaux."},
   {"question":"Comment Napoléon a-t-il soutenu les ingénieurs et inventeurs ?","answer":"En créant des écoles techniques et en finançant des projets scientifiques et militaires."},
   {"question":"Quel rôle les sciences naturelles ont-elles joué sous Napoléon ?","answer":"Explorer, classifier et publier des découvertes scientifiques, notamment lors de l’expédition d’Égypte."},
-
-
 {"question":"Quel accord Napoléon a-t-il signé avec le pape en 1801 ?","answer":"Le Concordat de 1801."},
   {"question":"Quel était l’objectif principal du Concordat de 1801 ?","answer":"Rétablir les relations entre la France et l’Église catholique."},
   {"question":"Comment Napoléon a-t-il nommé les évêques en France ?","answer":"Ils étaient nommés par l’empereur avec l’approbation du pape."},
@@ -209,7 +199,6 @@
   {"question":"Comment Napoléon voyait-il le rôle de la religion dans l’État ?","answer":"Comme un outil de stabilité sociale et politique."},
   {"question":"Comment Napoléon équilibrerait-il le pouvoir entre l’Église et l’État ?","answer":"En limitant l’influence spirituelle et en plaçant l’Église sous le contrôle impérial."},
   {"question":"Quel est l’héritage du Concordat napoléonien en France ?","answer":"Une organisation de l’Église sous contrôle de l’État et un cadre légal pour les cultes."},
-
 {"question":"Quel code Napoléon a codifié le droit civil en France ?","answer":"Le Code civil, aussi appelé Code Napoléon."},
   {"question":"En quelle année le Code civil a-t-il été promulgué ?","answer":"1804."},
   {"question":"Quel autre code important Napoléon a-t-il créé pour régir la guerre ?","answer":"Le Code militaire."},
@@ -235,7 +224,6 @@
   {"question":"Comment Napoléon organisait-il les élections locales ?","answer":"Elles étaient limitées et contrôlées par l’administration centrale."},
   {"question":"Quel rôle avait l’administration dans l’éducation sous Napoléon ?","answer":"Superviser les écoles et les lycées, former les fonctionnaires."},
   {"question":"Quel est l’héritage administratif de Napoléon en France aujourd’hui ?","answer":"La centralisation, les départements et les préfets existent encore dans l’organisation administrative."},
-
 {"question":"Quel animal Napoléon a choisi comme symbole de son empire ?","answer":"L’aigle."},
   {"question":"Quel drapeau représentait l’Empire napoléonien ?","answer":"Le drapeau tricolore avec l’aigle impérial."},
   {"question":"Quel monument Napoléon a fait construire pour célébrer ses victoires ?","answer":"L’Arc de Triomphe à Paris."},
@@ -261,7 +249,6 @@
   {"question":"Comment Napoléon contrôlait-il l’art pour sa propagande ?","answer":"En commandant des œuvres et en censurant celles qui ne glorifiaient pas son règne."},
   {"question":"Quel était le message des médailles distribuées par Napoléon ?","answer":"Récompenser le mérite et montrer l’importance de la loyauté envers l’empereur."},
   {"question":"Comment Napoléon a-t-il utilisé les monuments publics pour la propagande ?","answer":"Pour célébrer ses victoires et marquer son empreinte sur l’espace urbain."},
-
 {"question":"Quelle campagne militaire a marqué le début du déclin de Napoléon ?","answer":"La campagne de Russie en 1812."},
   {"question":"Quelle bataille en 1813 a été une défaite majeure pour Napoléon ?","answer":"La bataille de Leipzig."},
   {"question":"Quand Napoléon a-t-il abdiqué pour la première fois ?","answer":"En avril 1814."},
@@ -287,7 +274,6 @@
   {"question":"Quel était le but des Britanniques en envoyant Napoléon à Sainte-Hélène ?","answer":"L’éloigner de l’Europe pour éviter tout retour au pouvoir."},
   {"question":"Quelle a été la réaction de l’Europe après la mort de Napoléon ?","answer":"Un mélange de respect, admiration et soulagement politique."},
   {"question":"Quel est l’héritage symbolique du déclin et de l’exil de Napoléon ?","answer":"Il reste un exemple de gloire militaire suivie d’une chute dramatique."},
-
 {"question":"Quel code Napoléon a influencé de nombreux pays en Europe et dans le monde ?","answer":"Le Code civil."},
   {"question":"Comment Napoléon a influencé l’organisation administrative des États européens ?","answer":"Par la centralisation et la mise en place de préfets et départements."},
   {"question":"Quel impact Napoléon a-t-il eu sur l’armée moderne ?","answer":"La structuration des armées, l’organisation en corps et la stratégie militaire."},
@@ -314,8 +300,6 @@
   {"question":"Quel impact Napoléon a-t-il eu sur les réformes administratives hors de France ?","answer":"Ses modèles ont été adoptés dans plusieurs États européens."},
   {"question":"Comment Napoléon a influencé la hiérarchie militaire moderne ?","answer":"Par la création des grades, la discipline et l’organisation structurée de l’armée."},
   {"question":"Quel héritage Napoléon a-t-il laissé pour la nation française ?","answer":"Un État centralisé, des lois uniformes et une culture militaire et administrative durable."}
-
-
-
 ]
+
 
